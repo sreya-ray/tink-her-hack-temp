@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShareBite - Leftover Food Sharing Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts for distinctive typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🍽️</span>
+                <span class="logo-text">ShareBite</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active" data-page="home">Home</a>
+                <a href="#donor" class="nav-link" data-page="donor">Donate</a>
+                <a href="#receiver" class="nav-link" data-page="receiver">Receive</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main class="main-content">
+        
+        <!-- HOME PAGE -->
+        <section id="home-page" class="page active">
+            <!-- Hero Section -->
+            <div class="hero-section">
+                <div class="hero-content">
+                    <div class="hero-badge">Building Sustainable Communities</div>
+                    <h1 class="hero-title">Sharing Today.<br>Sustaining Tomorrow.</h1>
+                    <p class="hero-subtitle">Join our mission to reduce food waste and fight hunger. Every meal shared is a step towards a better tomorrow.</p>
+                    
+                    <div class="cta-buttons">
+                        <button class="btn btn-primary" data-navigate="donor">
+                            <span class="btn-icon"></span>
+                            <span>Donate Food</span>
+                        </button>
+                        <button class="btn btn-secondary" data-navigate="receiver">
+                            <span class="btn-icon"></span>
+                            <span>Receive Food</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Decorative circles in hero -->
+                <div class="hero-decoration">
+                    <div class="decoration-circle decoration-1"></div>
+                    <div class="decoration-circle decoration-2"></div>
+                    <div class="decoration-circle decoration-3"></div>
+                </div>
+            </div>
+
+            <!-- Impact Section -->
+            <div class="impact-section">
+                <div class="impact-container">
+                    <h2 class="impact-title">Our Community Impact</h2>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">
+                                <span id="meals-saved">12,847</span>
+                            </div>
+                            <div class="stat-label">Meals Saved</div>
+                            <div class="stat-icon">🍱</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">
+                                <span>847</span>
+                            </div>
+                            <div class="stat-label">Active Donors</div>
+                            <div class="stat-icon">🏪</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">
+                                <span>234</span>
+                            </div>
+                            <div class="stat-label">Partner NGOs</div>
+                            <div class="stat-icon">❤️</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- How It Works Section -->
+            <div class="how-it-works">
+                <h2 class="section-title">How It Works</h2>
+                <div class="steps-container">
+                    <div class="step-card">
+                        <div class="step-number">01</div>
+                        <h3 class="step-title">Donate</h3>
+                        <p class="step-description">Restaurants and canteens list their leftover food with pickup details</p>
+                    </div>
+                    <div class="step-connector"></div>
+                    <div class="step-card">
+                        <div class="step-number">02</div>
+                        <h3 class="step-title">Connect</h3>
+                        <p class="step-description">Buyers browse available food donations nearby</p>
+                    </div>
+                    <div class="step-connector"></div>
+                    <div class="step-card">
+                        <div class="step-number">03</div>
+                        <h3 class="step-title">Impact</h3>
+                        <p class="step-description">Food reaches those in need, reducing waste and supporting local businesses</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DONOR PAGE -->
+        <section id="donor-page" class="page">
+            <div class="page-header">
+                <h1 class="page-title">Donate Surplus Food</h1>
+                <p class="page-subtitle">Share your extra food and make a difference in your community</p>
+            </div>
+
+            <div class="donor-container">
+                <div class="form-card">
+                    <form id="donation-form" class="donation-form">
+                        <div class="form-group">
+                            <label for="food-name" class="form-label">
+                                Food Name <span class="required">*</span>
+                            </label>
+                            <input 
+                                type="text" 
+                                id="food-name" 
+                                name="foodName" 
+                                class="form-input" 
+                                placeholder="e.g., Biryani, Sandwiches, Fresh Salad"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="quantity" class="form-label">
+                                    Quantity (servings) <span class="required">*</span>
+                                </label>
+                                <input 
+                                    type="number" 
+                                    id="quantity" 
+                                    name="quantity" 
+                                    class="form-input" 
+                                    placeholder="Number of servings"
+                                    min="1"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="pickup-time" class="form-label">
+                                    Pickup Time <span class="required">*</span>
+                                </label>
+                                <input 
+                                    type="time" 
+                                    id="pickup-time" 
+                                    name="pickupTime" 
+                                    class="form-input"
+                                    required
+                                >
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="price" class="form-label">
+                                Price (₹) <span class="required">*</span>
+                            </label>
+                            <input 
+                                type="number" 
+                                id="price" 
+                                name="price" 
+                                class="form-input" 
+                                placeholder="e.g., 299"
+                                min="1"
+                                step="1"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="location" class="form-label">
+                                Pickup Location <span class="required">*</span>
+                            </label>
+                            <input 
+                                type="text" 
+                                id="location" 
+                                name="location" 
+                                class="form-input" 
+                                placeholder="Address or landmark"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="image-url" class="form-label">
+                                Image URL <span class="optional">(Optional)</span>
+                            </label>
+                            <input 
+                                type="url" 
+                                id="image-url" 
+                                name="imageUrl" 
+                                class="form-input" 
+                                placeholder="https://example.com/food-image.jpg"
+                            >
+                        </div>
+
+                        <button type="submit" class="btn btn-submit">
+                            <span>Submit Donation</span>
+                            <span class="btn-arrow">→</span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Success Message -->
+                <div id="success-message" class="success-message">
+                    <div class="success-icon">✓</div>
+                    <h3 class="success-title">Donation Listed Successfully!</h3>
+                    <p class="success-text">Your surplus food is now available for purchase by buyers in your area.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- RECEIVER PAGE -->
+        <section id="receiver-page" class="page">
+            <div class="page-header">
+                <h1 class="page-title">Available Food Donations</h1>
+                <p class="page-subtitle">Browse and purchase surplus food from restaurants and canteens at affordable prices</p>
+            </div>
+
+            <div class="receiver-container">
+                <!-- Filter Section -->
+                <div class="filter-bar">
+                    <div class="filter-group">
+                        <label class="filter-label">Filter by status:</label>
+                        <select id="status-filter" class="filter-select">
+                            <option value="all">All Donations</option>
+                            <option value="available">Available Only</option>
+                            <option value="unavailable">Unavailable Only</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Food Cards Grid -->
+                <div id="food-grid" class="food-grid">
+                    <!-- Food cards will be dynamically inserted here -->
+                </div>
+
+                <!-- Empty State -->
+                <div id="empty-state" class="empty-state">
+                    <div class="empty-icon">🍽️</div>
+                    <h3 class="empty-title">No donations available</h3>
+                    <p class="empty-text">Check back later or encourage local businesses to list surplus food for sale!</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-title">ShareBite</h3>
+                <p class="footer-text">Building bridges between surplus and need, one meal at a time.</p>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-subtitle">Quick Links</h4>
+                <a href="#home" class="footer-link" data-page="home">Home</a>
+                <a href="#donor" class="footer-link" data-page="donor">Donate Food</a>
+                <a href="#receiver" class="footer-link" data-page="receiver">Receive Food</a>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-subtitle">Hackathon Project</h4>
+                <p class="footer-text">Team:Cipher</p>
+                <p class="footer-text">Built with ❤️ for sustainable communities</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ShareBite. A hackathon project for sustainability.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
