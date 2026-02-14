@@ -2,56 +2,52 @@
   <img src="./img.png" alt="Project Banner" width="100%">
 </p>
 
-# [Project Name] 🎯
+# ShareBite
 
 ## Basic Details
 
-### Team Name: [Name]
+### Team Name: Cipher
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
+- Member 1: Sreya S - Jain University Kochi
+- Member 2: Rena AV - Jain University Kochi
 
 ### Hosted Project Link
-[mention your project hosted link here]
+[https://cipher-share-bite.vercel.app/]
 
 ### Project Description
-[2-3 lines about what your project does]
+This hackathon project aims to bridge the gap between food donors and people in need, to promote sustainability an reduce food waste across the city
 
 ### The Problem statement
-[What problem are you solving?]
+- Restaurants, hotels, and college canteens discard **30–40%** of prepared food daily due to unpredictable demand.
+- At the same time, students, daily-wage workers, and low-income families face rising food costs and limited access to nutritious meals.
+- Existing food donation systems are often slow, location-specific, or charity-only , leaving a massive gap for **timely, market-driven redistribution**.
 
 ### The Solution
-[How are you solving it?]
+ShareBite is a **web platform** that enables:
 
----
+- List leftover food from Restaurants & canteens
+- Helps people access food in lesser cost   
+- Outcome → food saved from waste, money saved for buyers, goodwill earned by businesses.
 
 ## Technical Details
 
 ### Technologies/Components Used
 
 **For Software:**
-- Languages used: [e.g., JavaScript, Python, Java]
-- Frameworks used: [e.g., React, Django, Spring Boot]
-- Libraries used: [e.g., axios, pandas, JUnit]
-- Tools used: [e.g., VS Code, Git, Docker]
+- Languages used: JavaScript,HTML,CSS
+- Frameworks used: None
+- Libraries used: No external Library
+- Tools used: VS Code, Git, Github
 
-**For Hardware:**
-- Main components: [List main components]
-- Specifications: [Technical specifications]
-- Tools required: [List tools needed]
-
----
 
 ## Features
 
-List the key features of your project:
-- Feature 1: [Description]
-- Feature 2: [Description]
-- Feature 3: [Description]
-- Feature 4: [Description]
+- Has two interface - Donar & Receiver
+- Organised Food details( Quantity, Price, Pickup Location )
+- Real-time food availability grid with status (Available/ Unavailable) 
+- User friendly Interface
 
----
 
 ## Implementation
 
